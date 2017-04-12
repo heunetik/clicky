@@ -22,6 +22,6 @@ setInterval(function() {
 	+ currentdate.getHours() + ":" 
 	+ currentdate.getMinutes() + ":" + currentdate.getSeconds();
 	//alert(datetime);
-	if(currentdate.getHours() == 12)
+	if(currentdate.getHours() == hourhere && (currentdate.getDay() != 6 && currentdate.getDay() != 0))
 		document.getElementById("test").click();
 }, 5000);
